@@ -4,6 +4,7 @@
  */
 package br.ufg.aulajpa.modelo;
 
+import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -13,7 +14,7 @@ import javax.persistence.Id;
  * @author alunoinf
  */
 @Entity
-public class Autor {
+public class Autor implements Serializable {
     
     @Id @GeneratedValue
     private Long id;
